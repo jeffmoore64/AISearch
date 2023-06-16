@@ -10,8 +10,7 @@ from text import nonewlines
 class RetrieveThenReadApproach(Approach):
 
     template = \
-"Test me by using multiple choice questions, allow me to answer before asking the next question. " + \
-"Start the test when user prompt is START." + \
+"Test me by Azure Data Fundamentals. Ask me one multiple choice question and allow me to answer before asking the next question. " + \
 "Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. " + \
 "Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question. " + \
 "Answer the question using only the data provided in the information sources below. " + \

@@ -19,8 +19,7 @@ from lookuptool import CsvLookupTool
 class ReadRetrieveReadApproach(Approach):
 
     template_prefix = \
-"Test me by using multiple choice questions, allow me to answer before asking the next question. " \
-"Start the test when user prompt is START." \
+"Test me by Azure Data Fundamentals. Ask me one multiple choice question and allow me to answer before asking the next question. " \
 "Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. " \
 "Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question. " \
 "Answer the question using only the data provided in the information sources below. " \
@@ -40,7 +39,7 @@ Question: {input}
 
 Thought: {agent_scratchpad}"""    
 
-    CognitiveSearchToolDescription = "useful for searching the Microsoft employee benefits information such as healthcare plans, retirement plans, etc."
+    CognitiveSearchToolDescription = "useful for searching the Microsoft Leran documents on DP-900, etc."
 
     def __init__(self, search_client: SearchClient, openai_deployment: str, sourcepage_field: str, content_field: str):
         self.search_client = search_client
@@ -113,7 +112,7 @@ class EmployeeInfoTool(CsvLookupTool):
         super().__init__(filename="data/employeeinfo.csv", 
                          key_field="name", 
                          name="Employee", 
-                         description="useful for answering questions about the employee, their benefits and other personal information",
+                         description="useful for searching the Microsoft Leran documents on DP-900, etc.",
                          callbacks=callbacks)
         self.func = self.employee_info
         self.employee_name = employee_name
