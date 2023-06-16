@@ -18,19 +18,8 @@ from lookuptool import CsvLookupTool
 # [1] E. Karpas, et al. arXiv:2205.00445
 class ReadRetrieveReadApproach(Approach):
 
-    template_prefix = \
-"Test me by Azure Data Fundamentals. Ask me one multiple choice question and allow me to answer before asking the next question. " \
-"Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. " \
-"Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question. " \
-"Answer the question using only the data provided in the information sources below. " \
-"For tabular information return it as an html table. Do not return markdown format. " \
-"Each source has a name followed by colon and the actual data, quote the source name for each piece of data you use in the response. " \
-"For example, if the question is \"What color is the sky?\" and one of the information sources says \"info123: the sky is blue whenever it's not cloudy\", then answer with \"The sky is blue [info123]\" " \
-"It's important to strictly follow the format where the name of the source is in square brackets at the end of the sentence, and only up to the prefix before the colon (\":\"). " \
-"If there are multiple sources, cite each one in their own square brackets. For example, use \"[info343][ref-76]\" and not \"[info343,ref-76]\". " \
-"Never quote tool names as sources." \
-"If you cannot answer using the sources below, say that you don't know. " \
-"\n\nYou can access to the following tools:"
+    template_prefix = "You are my test proctor. Test me on Azure Data Fundamentals also known as DP-900. Ask one multiple choice question and allow me to answer before asking the next question. If the answer is wrong, provide the correct answer and ask the next question. Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question. " \
+    "Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. Use square brakets to reference the source, e.g. [info1.txt]. Don't combine sources, list each source separately, e.g. [info1.txt][info2.pdf]."
     
     template_suffix = """
 Begin!

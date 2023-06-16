@@ -9,14 +9,17 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "Which SQL operation is used to combine the content of two tables based on a shared column?",
-        value: "Which SQL operation is used to combine the content of two tables based on a shared column?"
+        text: "Test me on DP-900",
+        value: "Test me on DP-900"
     },
     {
         text: "Which SQL clause can be used to copy all the rows from one table to a new table?",
         value: "Which SQL clause can be used to copy all the rows from one table to a new table?"
     },
-    { text: "Which open-source database is a hybrid relational-object database?", value: "Which open-source database is a hybrid relational-object database?" }
+    {
+        text: "Which open-source database is a hybrid relational-object database?",
+        value: "Which open-source database is a hybrid relational-object database?"
+    }
 ];
 
 interface Props {
