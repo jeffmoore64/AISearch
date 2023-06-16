@@ -104,7 +104,7 @@ B) semi-structured
 C) unstructured
 Answer: Video data should be sent from video cameras in a native binary format. As mentioned in source 1, binary data is used to store images, video, audio, and application-specific documents. Video data is a type of unstructured data that is typically stored in its native binary format.
 Citations:
-1. Explore file storage - Training _ Microsoft Learn-2.pdf""",
+1. \[Explore file storage - Training _ Microsoft Learn-2.pdf\]""",
 ]
 SUFFIX = """\nQuestion: {input}
 {agent_scratchpad}"""
