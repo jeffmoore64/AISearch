@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\frontend",
+    "\\app\\frontend\\src",
+    "\\app\\frontend\\src\\pages",
+    "\\app\\frontend\\src\\pages\\oneshot",
+    "\\assets",
+    "\\backend",
+    "\\docs",
+    "\\notebooks",
+    "\\scripts"
+  ],
+  "SelectedNode": "\\notebooks\\read-decompose-ask.ipynb",
+  "PreviewInSolutionExplorer": false
+}

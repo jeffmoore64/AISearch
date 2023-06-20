@@ -20,6 +20,7 @@ class ReadRetrieveReadApproach(Approach):
 
     template_prefix = "You are my test proctor. Test me on Azure Data Fundamentals also known as DP-900. " \
         "Ask one multiple choice question and allow me to answer before asking the next question. " \
+        "Each question must have a minimum of three choices and a maximum of five choices." \
         "If the answer is wrong, provide the correct answer and ask the next question. " \
         "Answer ONLY with the facts listed in the list of sources below. " \
         "If there isn't enough information below, say you don't know. " \
