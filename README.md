@@ -17,7 +17,8 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 * Settings directly in the UX to tweak the behavior and experiment with options
 
 ![Chat screen](docs/chatscreen.png)
-[Chat screen](docs/chatscreen1.png)
+
+![Chat screen2](docs/chatscreen1.png)
 
 ## Getting Started
 
