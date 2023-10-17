@@ -129,7 +129,7 @@ module openAi 'core/ai/cognitiveservices.bicep' = {
         model: {
           format: 'OpenAI'
           name: gptModelName
-          version: '2'
+          version: '1'
         }
         scaleSettings: {
           scaleType: 'Standard'
